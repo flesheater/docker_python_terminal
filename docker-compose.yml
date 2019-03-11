@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  python:
+    image: python:3
+    container_name: "tf_python_3"
+    tty: true
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
